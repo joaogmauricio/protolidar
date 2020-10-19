@@ -31,13 +31,13 @@ def print_error(msg, color='', *args, **kwargs):
 def parse_args():
 	parser = argparse.ArgumentParser(description="Prototype Pollution Code Scanner", formatter_class=RawTextHelpFormatter)
 
-	parser.add_argument("-s", "--non-recursive", action="store_false", help="Simply example the target directory, without recursivity")
-	parser.add_argument("-p", "--pickiness", type=int, choices=[0,1,2], default=2, help="Sets 'pickiness' level (how strict the scan patters are)")
+	parser.add_argument("-s", "--non-recursive", action="store_false", help="simply examine the target directory, without recursivity")
+	parser.add_argument("-p", "--pickiness", type=int, choices=[0,1,2], default=2, help="sets 'pickiness' level (how strict the scan patters are)")
 
 	group = parser.add_mutually_exclusive_group(required=True)
 
-	group.add_argument("-d", "--directory", help="Target directory")
-	group.add_argument("-u", "--url-git", help="Target git repo")
+	group.add_argument("-d", "--directory", help="target directory")
+	group.add_argument("-u", "--url-git", help="target git repo")
 
 	return parser.parse_args()
 
