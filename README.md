@@ -1,2 +1,2 @@
 # protolidar
-Prototype Pollution Scanner
+(JS) Prototype Pollution Scanner
