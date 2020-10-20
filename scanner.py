@@ -73,7 +73,6 @@ def main():
 		scan(args.directory, args.non_recursive, args.pickiness)
 	elif args.url_git:
 		target_dir = "./repos/" + args.url_git.split('/')[-1].split('.')[0]
-		print(target_dir)
 		try:
 			Repo.clone_from(args.url_git, target_dir)
 			scan(target_dir, args.non_recursive, args.pickiness)
