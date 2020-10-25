@@ -1,7 +1,7 @@
 # protolidar 
 > (JS) Prototype Pollution Scanner
 
-Scans for potentially dangerous code patterns that may lead to prototype pollution vulnerabilities. As it doesn't scan for recursive merges, clones or property definition by path patterns, one may argue that this may have a pretty limited scope (like obj[n][m]([p])* = val); however, you'd be surprised by how often such kind of instructions come up.
+Scans for potentially dangerous code patterns that may lead to prototype pollution vulnerabilities. As it doesn't scan for recursive merges, clones or property definition by path patterns, one may argue that this may have a pretty limited scope (like `obj[n][m]([p])* = val`); however, you'd be surprised by how often such kind of instructions come up.
 
 ## Usage
 
