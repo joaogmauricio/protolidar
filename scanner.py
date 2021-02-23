@@ -31,8 +31,8 @@ def print_error(msg, color='', *args, **kwargs):
 def parse_args():
 	parser = argparse.ArgumentParser(description="Prototype Pollution Code Scanner", formatter_class=RawTextHelpFormatter)
 
-	parser.add_argument("-s", "--non-recursive", action="store_false", help="simply examine the target directory, without recursivity")
-	parser.add_argument("-p", "--pickiness", type=int, choices=[0,1,2], default=2, help="sets 'pickiness' level (how strict the scan patters are)")
+	parser.add_argument("-l", "--non-recursive", action="store_false", help="linear mode: simply examine the target directory, without recursivity")
+	parser.add_argument("-p", "--pickiness", type=int, choices=[0,1,2], default=2, help="sets 'pickiness' level (how strict the scan patterns are). Default = 2")
 
 	group = parser.add_mutually_exclusive_group(required=True)
 
